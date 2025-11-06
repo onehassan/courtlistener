@@ -8,6 +8,12 @@ This guide shows how to download all PDF files associated with a specific case o
 https://www.courtlistener.com/docket/68563855/icharts-llc-v-tableau-software-llc/
 ```
 
+## Important: API Endpoint Access
+
+⚠️ **The `/recap-documents/` endpoint requires special permissions** and returns 403 Forbidden for most users.
+
+✅ **Solution: Use the Search API instead** - Works without special permissions!
+
 ## Quick Start
 
 ### Step 1: Extract Docket ID from URL
@@ -17,21 +23,43 @@ From the URL `https://www.courtlistener.com/docket/68563855/icharts-llc-v-tablea
 
 The docket ID is always the numeric value after `/docket/` in the URL.
 
-### Step 2: Use the API to Get All Documents
+### Step 2: Use the Search API to Get All Documents
+
+**No authentication required!**
 
 ```bash
 curl -X GET \
-  "https://www.courtlistener.com/api/rest/v4/recap-documents/?docket_entry__docket=68563855&is_available=true" \
+  "https://www.courtlistener.com/api/rest/v4/search/?q=docket_id:68563855&type=r"
+```
+
+**Alternative with authentication (for higher rate limits):**
+
+```bash
+curl -X GET \
+  "https://www.courtlistener.com/api/rest/v4/search/?q=docket_id:68563855&type=r" \
   -H "Authorization: Token YOUR_API_TOKEN"
 ```
 
 ### Step 3: Download Each PDF
 
-Each document in the response has a `filepath_local` field. Construct the download URL:
+Documents are nested under `recap_documents` in the response. Each document has a `filepath_local` field. Construct the download URL:
 
 ```
 https://storage.courtlistener.com/{filepath_local}
 ```
+
+---
+
+## Why This Guide Uses the Search API
+
+**The Problem:** The `/recap-documents/` endpoint requires a special permission (`has_recap_api_access`) that most users don't have. Attempting to use it results in a **403 Forbidden** error.
+
+**The Solution:** The Search API (`/search/?type=r`) provides access to the same documents without requiring special permissions. It's powered by Elasticsearch and works for both authenticated and anonymous users.
+
+**For detailed information about the 403 error and alternative solutions, see:**
+- **[RECAP_DOCS_README.md](RECAP_DOCS_README.md)** - Quick overview
+- **[RECAP_403_INVESTIGATION.md](RECAP_403_INVESTIGATION.md)** - In-depth analysis
+- **[RECAP_SOLUTIONS_GUIDE.md](RECAP_SOLUTIONS_GUIDE.md)** - All available solutions
 
 ---
 
@@ -79,36 +107,41 @@ def extract_docket_id(url):
     raise ValueError(f"Could not extract docket ID from URL: {url}")
 
 
-def fetch_all_documents(docket_id, api_token):
+def fetch_all_documents(docket_id, api_token=None):
     """
-    Fetch all available RECAP documents for a docket.
+    Fetch all available RECAP documents for a docket using the Search API.
+
+    This method works WITHOUT special permissions, unlike the direct
+    /recap-documents/ endpoint which requires has_recap_api_access permission.
 
     Args:
         docket_id: The CourtListener docket ID
-        api_token: API authentication token
+        api_token: Optional API authentication token (for higher rate limits)
 
     Returns:
         List of document dictionaries
     """
     BASE_URL = "https://www.courtlistener.com/api/rest/v4"
-    headers = {"Authorization": f"Token {api_token}"}
+    headers = {"Authorization": f"Token {api_token}"} if api_token else {}
 
     all_documents = []
-    page = 1
+    cursor = None
 
-    print(f"Fetching documents for docket {docket_id}...")
+    print(f"Fetching documents for docket {docket_id} using Search API...")
 
-    while page <= 100:  # Maximum 100 pages
+    while True:
+        params = {
+            "q": f"docket_id:{docket_id}",
+            "type": "r",  # Returns dockets with nested documents
+        }
+
+        if cursor:
+            params["cursor"] = cursor
+
         response = requests.get(
-            f"{BASE_URL}/recap-documents/",
+            f"{BASE_URL}/search/",
             headers=headers,
-            params={
-                "docket_entry__docket": docket_id,
-                "is_available": "true",
-                "page_size": 100,
-                "page": page,
-                "order_by": "id"
-            }
+            params=params
         )
 
         if response.status_code != 200:
@@ -116,19 +149,30 @@ def fetch_all_documents(docket_id, api_token):
             break
 
         data = response.json()
-        documents = data.get('results', [])
+        results = data.get('results', [])
 
-        if not documents:
+        if not results:
             break
 
-        all_documents.extend(documents)
-        print(f"  Page {page}: {len(documents)} documents ({len(all_documents)} total)")
+        # Extract nested documents from search results
+        for result in results:
+            recap_docs = result.get('recap_documents', [])
+            # Filter for available documents only
+            available_docs = [doc for doc in recap_docs if doc.get('is_available')]
+            all_documents.extend(available_docs)
 
-        # Check if there's a next page
-        if not data.get('next'):
+        print(f"  Fetched {len(results)} docket(s), {len(all_documents)} documents total...")
+
+        # Check for next page
+        next_url = data.get('next')
+        if not next_url:
             break
 
-        page += 1
+        # Extract cursor from next URL
+        if 'cursor=' in next_url:
+            cursor = next_url.split('cursor=')[-1].split('&')[0]
+        else:
+            break
 
     return all_documents
 
@@ -297,55 +341,46 @@ if __name__ == "__main__":
 
 ## Manual Step-by-Step Method
 
-### Step 1: Get Docket Information
+### Step 1: Get Documents Using Search API
 
 ```bash
 DOCKET_ID=68563855
-API_TOKEN="your_api_token"
+API_TOKEN="your_api_token"  # Optional - can work without token
 
-# Get docket details
+# Get documents via Search API (no special permissions required)
 curl -X GET \
-  "https://www.courtlistener.com/api/rest/v4/dockets/${DOCKET_ID}/" \
-  -H "Authorization: Token ${API_TOKEN}"
+  "https://www.courtlistener.com/api/rest/v4/search/?q=docket_id:${DOCKET_ID}&type=r" \
+  -H "Authorization: Token ${API_TOKEN}" \
+  > docket_search.json
 ```
 
-### Step 2: Count Available Documents
-
-```bash
-# Get count of available documents
-curl -X GET \
-  "https://www.courtlistener.com/api/rest/v4/recap-documents/?docket_entry__docket=${DOCKET_ID}&is_available=true&count=on" \
-  -H "Authorization: Token ${API_TOKEN}"
-```
-
-**Response:**
+**Response contains:**
 ```json
 {
-  "count": 245
+  "results": [
+    {
+      "docket_id": 68563855,
+      "caseName": "iCharts LLC v. Tableau Software LLC",
+      "recap_documents": [
+        {
+          "id": 123,
+          "document_number": "1",
+          "description": "Complaint",
+          "is_available": true,
+          "filepath_local": "recap/gov.uscourts.cand.123/doc.1.0.pdf"
+        },
+        ...
+      ]
+    }
+  ]
 }
 ```
 
-### Step 3: Fetch All Documents
+### Step 2: Extract and Download PDFs
 
 ```bash
-# Get first page of documents
-curl -X GET \
-  "https://www.courtlistener.com/api/rest/v4/recap-documents/?docket_entry__docket=${DOCKET_ID}&is_available=true&page_size=100&page=1" \
-  -H "Authorization: Token ${API_TOKEN}" \
-  > documents_page1.json
-
-# Get second page if needed
-curl -X GET \
-  "https://www.courtlistener.com/api/rest/v4/recap-documents/?docket_entry__docket=${DOCKET_ID}&is_available=true&page_size=100&page=2" \
-  -H "Authorization: Token ${API_TOKEN}" \
-  > documents_page2.json
-```
-
-### Step 4: Extract PDF URLs and Download
-
-```bash
-# Extract filepath_local from JSON and download
-jq -r '.results[] | .filepath_local' documents_page1.json | while read filepath; do
+# Extract nested documents and download PDFs
+jq -r '.results[].recap_documents[] | select(.is_available == true) | .filepath_local' docket_search.json | while read filepath; do
   if [ ! -z "$filepath" ]; then
     filename=$(basename "$filepath")
     echo "Downloading: $filename"
@@ -361,20 +396,22 @@ done
 ```bash
 #!/bin/bash
 # download_case_pdfs.sh
-# Usage: ./download_case_pdfs.sh <docket_url> <api_token> [output_dir]
+# Usage: ./download_case_pdfs.sh <docket_url> [api_token] [output_dir]
+# Note: API token is optional - works without authentication
 
 set -e
 
 # Parse arguments
 DOCKET_URL="$1"
-API_TOKEN="$2"
+API_TOKEN="${2:-}"
 OUTPUT_DIR="${3:-./case_pdfs}"
 
-if [ -z "$DOCKET_URL" ] || [ -z "$API_TOKEN" ]; then
-    echo "Usage: $0 <docket_url> <api_token> [output_dir]"
+if [ -z "$DOCKET_URL" ]; then
+    echo "Usage: $0 <docket_url> [api_token] [output_dir]"
     echo ""
     echo "Example:"
     echo "  $0 'https://www.courtlistener.com/docket/68563855/...' 'your_token' './pdfs'"
+    echo "  $0 'https://www.courtlistener.com/docket/68563855/...'  # Works without token"
     exit 1
 fi
 
@@ -389,70 +426,62 @@ fi
 echo "========================================="
 echo "Downloading PDFs for Docket: $DOCKET_ID"
 echo "Output Directory: $OUTPUT_DIR"
+echo "Method: Search API (no special permissions)"
 echo "========================================="
 
 # Create output directory
 mkdir -p "$OUTPUT_DIR"
 
-# Fetch documents with pagination
-PAGE=1
+# Prepare auth header if token provided
+AUTH_HEADER=""
+if [ ! -z "$API_TOKEN" ]; then
+    AUTH_HEADER="-H \"Authorization: Token ${API_TOKEN}\""
+fi
+
 TOTAL_DOWNLOADED=0
 
-while true; do
-    echo ""
-    echo "Fetching page $PAGE..."
+echo ""
+echo "Fetching documents via Search API..."
 
-    # Fetch documents
-    RESPONSE=$(curl -s -X GET \
-        "https://www.courtlistener.com/api/rest/v4/recap-documents/?docket_entry__docket=${DOCKET_ID}&is_available=true&page_size=100&page=${PAGE}" \
-        -H "Authorization: Token ${API_TOKEN}")
+# Fetch documents using Search API (no special permissions required)
+RESPONSE=$(curl -s -X GET \
+    "https://www.courtlistener.com/api/rest/v4/search/?q=docket_id:${DOCKET_ID}&type=r" \
+    ${AUTH_HEADER})
 
-    # Check if we have results
-    RESULTS_COUNT=$(echo "$RESPONSE" | jq -r '.results | length')
+# Check if we have results
+RESULTS_COUNT=$(echo "$RESPONSE" | jq -r '.results | length')
 
-    if [ "$RESULTS_COUNT" -eq 0 ]; then
-        echo "No more documents found."
-        break
-    fi
+if [ "$RESULTS_COUNT" -eq 0 ]; then
+    echo "No dockets found with ID: $DOCKET_ID"
+    exit 1
+fi
 
-    echo "Found $RESULTS_COUNT documents on page $PAGE"
+echo "Found docket with documents"
 
-    # Download each PDF
-    echo "$RESPONSE" | jq -r '.results[] | "\(.document_number)|\(.attachment_number // 0)|\(.description)|\(.filepath_local)"' | while IFS='|' read -r doc_num attach_num description filepath; do
-        if [ ! -z "$filepath" ]; then
-            # Create safe filename
-            safe_desc=$(echo "$description" | tr -dc '[:alnum:] -' | tr ' ' '_' | cut -c1-50)
-            filename=$(printf "doc_%03d" "$doc_num")
+# Download each PDF from nested recap_documents
+echo "$RESPONSE" | jq -r '.results[].recap_documents[] | select(.is_available == true) | "\(.document_number)|\(.attachment_number // 0)|\(.description)|\(.filepath_local)"' | while IFS='|' read -r doc_num attach_num description filepath; do
+    if [ ! -z "$filepath" ]; then
+        # Create safe filename
+        safe_desc=$(echo "$description" | tr -dc '[:alnum:] -' | tr ' ' '_' | cut -c1-50)
+        filename=$(printf "doc_%03d" "$doc_num")
 
-            if [ "$attach_num" -gt 0 ]; then
-                filename="${filename}_attach_${attach_num}"
-            fi
-
-            filename="${filename}_${safe_desc}.pdf"
-
-            echo "  Downloading: $filename"
-            curl -s -o "${OUTPUT_DIR}/${filename}" "https://storage.courtlistener.com/${filepath}"
-
-            if [ $? -eq 0 ]; then
-                TOTAL_DOWNLOADED=$((TOTAL_DOWNLOADED + 1))
-                file_size=$(du -h "${OUTPUT_DIR}/${filename}" | cut -f1)
-                echo "    ✅ Saved ($file_size)"
-            else
-                echo "    ❌ Failed"
-            fi
+        if [ "$attach_num" -gt 0 ]; then
+            filename="${filename}_attach_${attach_num}"
         fi
-    done
 
-    # Check if there's a next page
-    NEXT=$(echo "$RESPONSE" | jq -r '.next')
-    if [ "$NEXT" == "null" ]; then
-        break
+        filename="${filename}_${safe_desc}.pdf"
+
+        echo "  Downloading: $filename"
+        curl -s -o "${OUTPUT_DIR}/${filename}" "https://storage.courtlistener.com/${filepath}"
+
+        if [ $? -eq 0 ]; then
+            TOTAL_DOWNLOADED=$((TOTAL_DOWNLOADED + 1))
+            file_size=$(du -h "${OUTPUT_DIR}/${filename}" | cut -f1)
+            echo "    ✅ Saved ($file_size)"
+        else
+            echo "    ❌ Failed"
+        fi
     fi
-
-    PAGE=$((PAGE + 1))
-
-    # Rate limiting
-    sleep 1
 done
 
 echo ""
@@ -714,25 +743,36 @@ def get_archive_url(docket_id, api_token):
 
 ## Troubleshooting
 
+### Issue: "403 Forbidden when accessing /recap-documents/"
+
+**Solution:**
+This is expected! The `/recap-documents/` endpoint requires special permissions. **This guide has been updated to use the Search API instead**, which doesn't require special permissions.
+
+**See detailed documentation:**
+- [RECAP_DOCS_README.md](RECAP_DOCS_README.md) - Quick overview
+- [RECAP_403_INVESTIGATION.md](RECAP_403_INVESTIGATION.md) - Root cause analysis
+- [RECAP_SOLUTIONS_GUIDE.md](RECAP_SOLUTIONS_GUIDE.md) - Alternative solutions
+
 ### Issue: "No documents found"
 
 **Solution:**
 - Verify the docket ID is correct
-- Check if documents are marked as `is_available=true`
-- Try without the `is_available` filter to see all documents
+- Check if the case has any documents available
+- Try the URL in a browser to verify the docket exists
 
-### Issue: "403 Forbidden" or "401 Unauthorized"
+### Issue: "401 Unauthorized"
 
 **Solution:**
-- Verify your API token is correct
+- If using authentication, verify your API token is correct
+- Note: The Search API works WITHOUT authentication (but has lower rate limits)
 - Make sure token is included in the Authorization header
 
 ### Issue: "PDFs won't download"
 
 **Solution:**
-- Check `filepath_local` is not null/empty
-- Verify the constructed URL is correct
-- Some documents may be sealed or restricted
+- Check `filepath_local` is not null/empty in the response
+- Verify the constructed URL is correct: `https://storage.courtlistener.com/{filepath_local}`
+- Some documents may be sealed or restricted by the court
 
 ### Issue: "Download times out"
 
@@ -740,6 +780,7 @@ def get_archive_url(docket_id, api_token):
 - Increase timeout: `requests.get(url, timeout=120)`
 - Retry with exponential backoff
 - Check your internet connection
+- Some PDFs are very large and may take time to download
 
 ---
 
@@ -757,18 +798,32 @@ def get_archive_url(docket_id, api_token):
 To download all PDFs from a case URL:
 
 1. **Extract docket ID** from the URL (number after `/docket/`)
-2. **Query RECAP documents API** with `docket_entry__docket={id}&is_available=true`
-3. **Paginate through results** (100 per page, max 100 pages or use cursor)
+2. **Use Search API** with `q=docket_id:{id}&type=r` (no special permissions required!)
+3. **Extract nested documents** from `recap_documents` field in results
 4. **Download each PDF** from `https://storage.courtlistener.com/{filepath_local}`
 5. **Handle errors and rate limits** appropriately
 
+**Key Points:**
+- ✅ Search API works **without special permissions**
+- ✅ Authentication is **optional** (higher rate limits with token)
+- ✅ Returns dockets with **nested documents**
+- ✅ Filters for `is_available=true` automatically
+
 **Quick command:**
 ```bash
+# Works WITHOUT authentication!
+python download_case_pdfs.py \
+  "https://www.courtlistener.com/docket/68563855/icharts-llc-v-tableau-software-llc/"
+
+# Or with token for higher rate limits:
 python download_case_pdfs.py \
   "https://www.courtlistener.com/docket/68563855/icharts-llc-v-tableau-software-llc/" \
   "YOUR_API_TOKEN" \
   "./output_pdfs"
 ```
+
+**For more information about the 403 error and alternatives:**
+- See [RECAP_DOCS_README.md](RECAP_DOCS_README.md)
 
 ---
 
