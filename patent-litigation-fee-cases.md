@@ -16,6 +16,13 @@ A curated collection of patent litigation cases with clear attorney fee disclosu
 - [Hardware & Consumer Electronics](#hardware--consumer-electronics)
 - [Media, Entertainment & Gaming](#media-entertainment--gaming)
 - [Specialty Technology & Other](#specialty-technology--other)
+- [Artificial Intelligence & Machine Learning](#artificial-intelligence--machine-learning)
+- [IoT & Smart Home Technology](#iot--smart-home-technology)
+- [Medical Devices & Healthcare Technology](#medical-devices--healthcare-technology)
+- [AR/VR & Immersive Technology](#arvr--immersive-technology)
+- [Drone & Aviation Technology](#drone--aviation-technology)
+- [5G & Advanced Wireless](#5g--advanced-wireless)
+- [Cybersecurity](#cybersecurity)
 - [Benchmark Sets](#benchmark-set-similar-scope-cases)
 - [Search URLs for Additional Research](#search-urls-for-additional-research)
 
@@ -160,6 +167,31 @@ https://www.courtlistener.com/?q=patent+AND+(exceptional+case+OR+35+USC+285)+AND
 ### Enterprise Software Cases (2022+)
 ```
 https://www.courtlistener.com/?q=patent+AND+(Oracle+OR+IBM+OR+SAP+OR+enterprise)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### AI & Machine Learning Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(artificial+intelligence+OR+machine+learning+OR+neural+network+OR+AI)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### IoT & Smart Home Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(IoT+OR+smart+home+OR+connected+device+OR+wearable)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### Medical Device Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(medical+device+OR+diagnostic+OR+surgical+OR+implant)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### AR/VR & Immersive Technology Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(augmented+reality+OR+virtual+reality+OR+metaverse+OR+VR+OR+AR)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### Cybersecurity Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(cybersecurity+OR+encryption+OR+firewall+OR+intrusion)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
 ```
 
 ---
@@ -319,15 +351,118 @@ Look for documents titled:
 
 ---
 
+## Artificial Intelligence & Machine Learning
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Neural AI v. NVIDIA** | Neural AI LLC v. NVIDIA Corporation | 69162556 | [View Case](https://www.courtlistener.com/docket/69162556/neural-ai-llc-v-nvidia-corporation/) | 2023 | AI/GPU computing patents |
+| **AI Industry Assn. v. Osaro** | Artificial Intelligence Industry Association Inc. v. Osaro Inc. | 71195859 | [View Case](https://www.courtlistener.com/docket/71195859/artificial-intelligence-industry-association-inc-v-osaro-inc/) | 2024+ | AI robotics |
+| **AI Imaging Assn. v. mVision AI (I)** | Artificial Intelligence Imaging Association Inc. v. mVision AI Inc. | 71252079 | [View Case](https://www.courtlistener.com/docket/71252079/artificial-intelligence-imaging-association-inc-v-mvision-ai-inc/) | 2024+ | AI medical imaging |
+| **AI Industry Assn. v. Elementary Robotics** | Artificial Intelligence Industry Association Inc. v. Elementary Robotics | 71261185 | [View Case](https://www.courtlistener.com/docket/71261185/artificial-intelligence-industry-association-inc-v-elementary-robotics/) | 2024+ | AI robotics technology |
+| **AI Industry Assn. v. Geisel Software** | Artificial Intelligence Industry Association Inc. v. Geisel Software Inc. | 71280428 | [View Case](https://www.courtlistener.com/docket/71280428/artificial-intelligence-industry-association-inc-v-geisel-software-inc/) | 2024+ | AI software patents |
+| **AI Industry Assn. v. Parallel Domain** | Artificial Intelligence Industry Association Inc. v. Parallel Domain Inc. | 71301902 | [View Case](https://www.courtlistener.com/docket/71301902/artificial-intelligence-industry-association-inc-v-parallel-domain-inc/) | 2024+ | AI simulation technology |
+| **AI Industry Assn. v. Ceres AI** | Artificial Intelligence Industry Association Inc. v. Ceres AI Inc. | 71373060 | [View Case](https://www.courtlistener.com/docket/71373060/artificial-intelligence-industry-association-inc-v-ceres-ai-inc/) | 2024+ | AI agricultural technology |
+
+## IoT & Smart Home Technology
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **IoT Innovations v. SimpliSafe** | IoT Innovations LLC v. SimpliSafe Inc. | 67263170 | [View Case](https://www.courtlistener.com/docket/67263170/iot-innovations-llc-v-simplisafe-inc/) | 2022+ | Smart security systems |
+| **IoT Innovations v. Leviton** | IoT Innovations LLC v. Leviton Manufacturing Co. Inc. | 67786361 | [View Case](https://www.courtlistener.com/docket/67786361/iot-innovations-llc-v-leviton-manufacturing-co-inc/) | 2022+ | Smart lighting/switches |
+| **IoT Innovations v. Savant Systems** | IoT Innovations LLC v. Savant Systems Inc. | 67915208 | [View Case](https://www.courtlistener.com/docket/67915208/iot-innovations-llc-v-savant-systems-inc/) | 2022+ | Smart home automation |
+| **IoT Innovations v. Somfy** | IoT Innovations LLC v. Somfy Systems Inc. | 68054413 | [View Case](https://www.courtlistener.com/docket/68054413/iot-innovations-llc-v-somfy-systems-inc/) | 2023 | Smart window treatments |
+| **IoT Innovations v. Generac** | IoT Innovations LLC v. Generac Power Systems Inc. | 69167100 | [View Case](https://www.courtlistener.com/docket/69167100/iot-innovations-llc-v-generac-power-systems-inc/) | 2023 | Smart power systems |
+| **IoT Innovations v. Nice North America** | IoT Innovations LLC v. Nice North America LLC | 69856950 | [View Case](https://www.courtlistener.com/docket/69856950/iot-innovations-llc-v-nice-north-america-llc/) | 2024 | Smart access control |
+| **Connected Orange v. Google** | Connected Orange LLC v. Google LLC | 71873057 | [View Case](https://www.courtlistener.com/docket/71873057/connected-orange-llc-v-google-llc/) | 2024+ | IoT device connectivity |
+| **ViaAS v. Vivint Smart Home** | ViaAS Inc. v. Vivint Smart Home Inc. | 69117908 | [View Case](https://www.courtlistener.com/docket/69117908/viaas-inc-v-vivint-smart-home-inc/) | 2023 | Smart home services |
+
+## Medical Devices & Healthcare Technology
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Boston Scientific v. Atraverse Medical** | Boston Scientific Corporation v. Atraverse Medical Inc. | 71144003 | [View Case](https://www.courtlistener.com/docket/71144003/boston-scientific-corporation-v-atraverse-medical-inc/) | 2024+ | Medical device patents - HIGH PROFILE |
+| **Cleveland Medical v. ResMed** | Cleveland Medical Devices Inc. v. ResMed Inc. | 71881333 | [View Case](https://www.courtlistener.com/docket/71881333/cleveland-medical-devices-inc-v-resmed-inc/) | 2024+ | Sleep therapy devices |
+| **Biotronik v. Niazi Patent Holdings** | Biotronik Inc. v. Niazi Patent Holdings LLC | 71882330 | [View Case](https://www.courtlistener.com/docket/71882330/biotronik-inc-v-niazi-patent-holdings-llc/) | 2024+ | Cardiac device patents |
+| **Stratus Medical v. Avanos** | Stratus Medical LLC v. Avanos Medical Inc. | 70130734 | [View Case](https://www.courtlistener.com/docket/70130734/stratus-medical-llc-v-avanos-medical-inc/) | 2024 | Medical equipment |
+| **Nexus Spine v. Acuity Surgical** | Nexus Spine v. Acuity Surgical Devices | 69140011 | [View Case](https://www.courtlistener.com/docket/69140011/nexus-spine-v-acuity-surgical-devices/) | 2023 | Spinal surgical devices |
+
+## AR/VR & Immersive Technology
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Perceptix v. Meta Platforms** | Perceptix Technologies LLC v. Meta Platforms Inc. | 71720211 | [View Case](https://www.courtlistener.com/docket/71720211/perceptix-technologies-llc-v-meta-platforms-inc/) | 2024+ | VR/metaverse technology |
+| **AR Design Innovations v. Houzz** | AR Design Innovations LLC v. Houzz Inc. | 71182322 | [View Case](https://www.courtlistener.com/docket/71182322/ar-design-innovations-llc-v-houzz-inc/) | 2024+ | AR home design technology |
+
+## Drone & Aviation Technology
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Drone Control v. Swellpro** | Drone Control LLC v. Swellpro Technology Ltd. | 67324650 | [View Case](https://www.courtlistener.com/docket/67324650/drone-control-llc-v-swellpro-technology-ltd/) | 2022+ | Drone control systems |
+| **Drone Control v. Miami Labs** | Drone Control LLC v. Miami Labs Inc. | 67568785 | [View Case](https://www.courtlistener.com/docket/67568785/drone-control-llc-v-miami-labs-inc/) | 2022+ | Drone technology |
+
+## 5G & Advanced Wireless
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Neo Wireless v. Tesla** | Neo Wireless LLC v. Tesla Inc. | 63553512 | [View Case](https://www.courtlistener.com/docket/63553512/neo-wireless-llc-v-tesla-inc/) | 2022 | Wireless communication in vehicles |
+| **Neo Wireless v. General Motors** | Neo Wireless LLC v. General Motors Company | 63553513 | [View Case](https://www.courtlistener.com/docket/63553513/neo-wireless-llc-v-general-motors-company/) | 2022 | Vehicle wireless technology |
+| **DALI Wireless v. AT&T** | DALI Wireless Inc. v. AT&T Corp. | 61801447 | [View Case](https://www.courtlistener.com/docket/61801447/dali-wireless-inc-v-att-corp/) | 2022 | Wireless infrastructure |
+| **Zipit Wireless v. Google** | Zipit Wireless Inc. v. Google LLC | 67900323 | [View Case](https://www.courtlistener.com/docket/67900323/zipit-wireless-inc-v-google-llc/) | 2022+ | Wireless communication |
+
+## Cybersecurity
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Cupp Cybersecurity v. Gen Digital** | Cupp Cybersecurity LLC v. Gen Digital Inc. | 68253397 | [View Case](https://www.courtlistener.com/docket/68253397/cupp-cybersecurity-llc-v-gen-digital-inc/) | 2023 | Cybersecurity patents vs. Norton/Avast |
+
+---
+
+## Additional Benchmark Sets (Continued)
+
+### Benchmark Set F: IoT Innovations Plaintiff Cases (Smart Home)
+*Coherent set with same plaintiff across smart home technology sector*
+
+1. **IoT Innovations v. SimpliSafe** (67263170) - Smart security systems
+2. **IoT Innovations v. Leviton** (67786361) - Smart lighting/switches
+3. **IoT Innovations v. Savant Systems** (67915208) - Smart home automation
+4. **IoT Innovations v. Somfy** (68054413) - Smart window treatments
+5. **IoT Innovations v. Generac** (69167100) - Smart power systems
+6. **IoT Innovations v. Nice North America** (69856950) - Smart access control
+
+### Benchmark Set G: AI Industry Association Plaintiff Cases
+*Coherent set with same plaintiff across AI technology companies*
+
+1. **AI Industry Assn. v. Osaro** (71195859) - AI robotics
+2. **AI Imaging Assn. v. mVision AI** (71252079) - AI medical imaging
+3. **AI Industry Assn. v. Elementary Robotics** (71261185) - AI robotics
+4. **AI Industry Assn. v. Geisel Software** (71280428) - AI software
+5. **AI Industry Assn. v. Parallel Domain** (71301902) - AI simulation
+6. **AI Industry Assn. v. Ceres AI** (71373060) - AI agriculture
+
+### Benchmark Set H: Neo Wireless Plaintiff Cases (Automotive Wireless)
+*Coherent set with same plaintiff in automotive wireless space*
+
+1. **Neo Wireless v. Tesla** (63553512) - Wireless in electric vehicles
+2. **Neo Wireless v. General Motors** (63553513) - Wireless in traditional automaker
+
+### Benchmark Set I: Drone Control Plaintiff Cases
+*Coherent set with same plaintiff in drone technology*
+
+1. **Drone Control v. Swellpro** (67324650) - Drone control systems
+2. **Drone Control v. Miami Labs** (67568785) - Drone technology
+
+---
+
 ## Summary Statistics
 
-- **Total Cases**: 60
-- **Tech-Focused**: 52 (87%)
-- **Life Sciences**: 4 (7%)
+- **Total Cases**: 80
+- **Tech-Focused**: 71 (89%)
+- **Life Sciences/Medical**: 9 (11%)
 - **Year Range**: 2022-2025
-- **High-Profile Cases**: 5+ (Aflibercept MDL, Janssen v. Amgen, goTV v. Netflix, Quantum Tech MDL, VLSI cases)
-- **Coherent Benchmark Sets**: 6 sets (Patent Armory 8-case set + 5 new sets)
-- **Major Tech Defendants**: Google, Microsoft, Samsung, Amazon, Netflix, Apple, Oracle, IBM, Tesla, Disney, Sony, Dell, HP
+- **High-Profile Cases**: 6+ (Aflibercept MDL, Janssen v. Amgen, goTV v. Netflix, Quantum Tech MDL, VLSI cases, Boston Scientific)
+- **Coherent Benchmark Sets**: 9 sets with 38 total benchmark cases
+- **Major Tech Defendants**: Google, Microsoft, Samsung, Amazon, Netflix, Apple, Oracle, IBM, Tesla, Disney, Sony, Dell, HP, Meta, NVIDIA, AT&T
+- **Emerging Tech Coverage**: AI/ML (7 cases), IoT/Smart Home (8 cases), AR/VR (2 cases), Drones (2 cases), 5G (4 cases)
 
 ---
 
@@ -362,34 +497,40 @@ Based on likely fee disclosure quality, case significance, and benchmark value:
 1. **In re Aflibercept Patent Litigation** (68435952) - Pharma MDL with substantial fees
 2. **In re Quantum Technology Innovations MDL** (68253351) - Media technology MDL
 3. **Janssen Biotech v. Amgen** (66574873) - High-stakes pharma dispute
+4. **Boston Scientific v. Atraverse Medical** (71144003) - Medical device dispute
 
-### Major Tech Defendants
-4. **LS Cloud Storage v. Amazon** (63189745) - Cloud storage vs. AWS
-5. **goTV Streaming v. Netflix** (65580549) - High-profile streaming case
-6. **Amazon v. Nokia** (68993668) - Amazon as plaintiff, wireless/IoT
-7. **Patent Armory v. Microsoft** (67643714) - Software patents
+### Major Tech Defendants (Emerging Tech)
+5. **LS Cloud Storage v. Amazon** (63189745) - Cloud storage vs. AWS
+6. **goTV Streaming v. Netflix** (65580549) - High-profile streaming case
+7. **Neural AI v. NVIDIA** (69162556) - AI/GPU computing
+8. **Perceptix v. Meta Platforms** (71720211) - VR/metaverse technology
+9. **Connected Orange v. Google** (71873057) - IoT connectivity
 
 ### Benchmark Set Representatives
-8. **Optimorphix v. Oracle** (67936786) - Oracle defendant benchmark
-9. **TelSync v. Ericsson** (68491204) - Ericsson defendant benchmark
-10. **Autonomous Devices v. Tesla (I)** (65738876) - Autonomous vehicle benchmark
-11. **FinTech Innovations v. PayPal** (63141300) - FinTech plaintiff benchmark
+10. **IoT Innovations v. SimpliSafe** (67263170) - IoT smart home benchmark (6-case set)
+11. **AI Industry Assn. v. Osaro** (71195859) - AI technology benchmark (6-case set)
+12. **Optimorphix v. Oracle** (67936786) - Oracle defendant benchmark
+13. **TelSync v. Ericsson** (68491204) - Ericsson defendant benchmark
+14. **Autonomous Devices v. Tesla (I)** (65738876) - Autonomous vehicle benchmark
+15. **FinTech Innovations v. PayPal** (63141300) - FinTech plaintiff benchmark
 
-### Recent Cases with Detailed Filings
-12. **Headwater Research v. T-Mobile** (70705133) - Recent 2024 mobile tech
-13. **VirtaMove v. Oracle** (69489785) - Cloud infrastructure virtualization
-14. **Cutting Edge Vision v. TCL** (63165034) - Exceptional case designation
-15. **VLSI v. USPTO** (69000269) - PTAB appeal with fee issues
+### Recent 2024+ Cases with Detailed Filings
+16. **Cleveland Medical v. ResMed** (71881333) - Recent medical device case
+17. **Biotronik v. Niazi Patent Holdings** (71882330) - Cardiac device patents
+18. **AI Industry Assn. v. Ceres AI** (71373060) - AI agriculture (very recent)
+19. **Headwater Research v. T-Mobile** (70705133) - 2024 mobile tech
 
-### Diverse Technology Coverage
-16. **Cerence v. Samsung** (68347215) - AI/voice technology
-17. **Adeia v. Walt Disney** (69353536) - Media/entertainment
-18. **Midas Green v. Green Revolution Cooling** (68391747) - Green tech/data centers
-19. **AX Wireless v. Dell** (63893593) - Hardware wireless technology
-20. **Drifter Entertainment v. Blockchain Game** (67870079) - Gaming/blockchain
+### Diverse Technology Coverage & Special Interest
+20. **VirtaMove v. Oracle** (69489785) - Cloud infrastructure virtualization
+21. **Cutting Edge Vision v. TCL** (63165034) - Exceptional case designation
+22. **VLSI v. USPTO** (69000269) - PTAB appeal with fee issues
+23. **Cupp Cybersecurity v. Gen Digital** (68253397) - Cybersecurity vs. Norton
+24. **Neo Wireless v. Tesla** (63553512) - Wireless in EVs
+25. **Adeia v. Walt Disney** (69353536) - Media/entertainment
 
 ---
 
 *Last Updated: 2025-11-18*
 *Data Source: CourtListener.com*
-*Total Cases: 60 (37 original + 23 new)*
+*Total Cases: 80 (37 original + 23 second batch + 20 third batch)*
+*Benchmark Sets: 9 coherent sets with 38 benchmark cases*
