@@ -9,6 +9,14 @@ A curated collection of patent litigation cases with clear attorney fee disclosu
 - [Streaming & Video Technology](#streaming--video-technology)
 - [Life Sciences & Pharmaceuticals](#life-sciences--pharmaceuticals)
 - [Mixed Technology Cases](#mixed-technology-cases)
+- [Enterprise Software & Cloud Infrastructure](#enterprise-software--cloud-infrastructure)
+- [Autonomous Vehicles & Transportation](#autonomous-vehicles--transportation)
+- [Telecommunications & Wireless](#telecommunications--wireless)
+- [FinTech & Financial Services](#fintech--financial-services)
+- [Hardware & Consumer Electronics](#hardware--consumer-electronics)
+- [Media, Entertainment & Gaming](#media-entertainment--gaming)
+- [Specialty Technology & Other](#specialty-technology--other)
+- [Benchmark Sets](#benchmark-set-similar-scope-cases)
 - [Search URLs for Additional Research](#search-urls-for-additional-research)
 
 ---
@@ -129,6 +137,31 @@ https://www.courtlistener.com/?q=patent+AND+(AWS+OR+cloud+OR+SaaS+OR+API)+AND+(f
 https://www.courtlistener.com/?q=patent+AND+(fee+petition+OR+timekeeper+OR+paralegal)&type=r&order_by=score+desc&filed_after=2022-01-01
 ```
 
+### Autonomous Vehicle & Transportation Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(Tesla+OR+Uber+OR+Lyft+OR+autonomous+OR+vehicle)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### Telecommunications Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(Ericsson+OR+Nokia+OR+Qualcomm+OR+wireless)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### FinTech & Payment Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(fintech+OR+blockchain+OR+cryptocurrency+OR+payment)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### Exceptional Case Fee Awards (35 USC 285) (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(exceptional+case+OR+35+USC+285)+AND+(fee+award+OR+lodestar)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
+### Enterprise Software Cases (2022+)
+```
+https://www.courtlistener.com/?q=patent+AND+(Oracle+OR+IBM+OR+SAP+OR+enterprise)+AND+(fee+award+OR+attorney+fees)&type=r&order_by=score+desc&filed_after=2022-01-01
+```
+
 ---
 
 ## Data Points to Extract from Each Case
@@ -179,15 +212,122 @@ Look for documents titled:
 
 ---
 
+## Enterprise Software & Cloud Infrastructure
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **GeoSymm v. IBM** | GeoSymm Ventures LLC v. IBM Corporation | 67604474 | [View Case](https://www.courtlistener.com/docket/67604474/geosymm-ventures-llc-v-ibm-corporation/) | 2022+ | Enterprise software patents |
+| **Optimorphix v. Oracle** | Optimorphix Inc. v. Oracle Corporation | 67936786 | [View Case](https://www.courtlistener.com/docket/67936786/optimorphix-inc-v-oracle-corporation/) | 2022+ | Database/enterprise software |
+| **VirtaMove v. Oracle** | VirtaMove Corp. v. Oracle Corporation | 69489785 | [View Case](https://www.courtlistener.com/docket/69489785/virtamove-corp-v-oracle-corporation/) | 2023 | Virtualization/cloud infrastructure |
+| **FrameTech v. Oracle** | FrameTech LLC v. Oracle Corporation | 69564380 | [View Case](https://www.courtlistener.com/docket/69564380/frametech-llc-v-oracle-corporation/) | 2023 | Software framework patents |
+
+## Autonomous Vehicles & Transportation
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **Autonomous Devices v. Tesla (I)** | Autonomous Devices LLC v. Tesla Inc. | 65738876 | [View Case](https://www.courtlistener.com/docket/65738876/autonomous-devices-llc-v-tesla-inc/) | 2022 | Autonomous vehicle patents |
+| **Autonomous Devices v. Tesla (II)** | Autonomous Devices LLC v. Tesla Inc. | 68114425 | [View Case](https://www.courtlistener.com/docket/68114425/autonomous-devices-llc-v-tesla-inc/) | 2023 | Autonomous vehicle patents |
+| **Autonomous IP v. Tesla** | Autonomous IP LLC v. Tesla Inc. | 68189571 | [View Case](https://www.courtlistener.com/docket/68189571/autonomous-ip-llc-v-tesla-inc/) | 2023 | Self-driving technology |
+| **Autonomous IP v. Lyft** | Autonomous IP LLC v. Lyft Inc. | 68262920 | [View Case](https://www.courtlistener.com/docket/68262920/autonomous-ip-llc-v-lyft-inc/) | 2023 | Rideshare autonomous tech |
+| **LeeLike v. Lyft** | LeeLike v. Lyft Inc. | 65632768 | [View Case](https://www.courtlistener.com/docket/65632768/leelike-v-lyft-inc/) | 2022 | Transportation technology |
+
+## Telecommunications & Wireless
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **TelSync v. Ericsson** | TelSync Technologies LLC v. Ericsson Inc. | 68491204 | [View Case](https://www.courtlistener.com/docket/68491204/telsync-technologies-llc-v-ericsson-inc/) | 2023 | Wireless communication patents |
+| **Lab Technology v. Ericsson** | Lab Technology LLC v. Ericsson Inc. | 68827332 | [View Case](https://www.courtlistener.com/docket/68827332/lab-technology-llc-v-ericsson-inc/) | 2023 | Telecommunications technology |
+| **Mobility Workx v. Ericsson** | Mobility Workx LLC v. Ericsson Inc. | 69122743 | [View Case](https://www.courtlistener.com/docket/69122743/mobility-workx-llc-v-ericsson-inc/) | 2023 | Mobile network patents |
+| **Amazon v. Nokia** | Amazon Technologies Inc. v. Nokia Corporation | 68993668 | [View Case](https://www.courtlistener.com/docket/68993668/amazon-technologies-inc-v-nokia-corporation/) | 2023 | Wireless/IoT patents |
+
+## FinTech & Financial Services
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **FinTech Innovations v. PNC Bank** | FinTech Innovations Associates LLC v. PNC Bank NA | 63141298 | [View Case](https://www.courtlistener.com/docket/63141298/fintech-innovations-associates-llc-v-pnc-bank-na/) | 2022 | Banking technology patents |
+| **FinTech Innovations v. PayPal** | FinTech Innovations Associates LLC v. PayPal Inc. | 63141300 | [View Case](https://www.courtlistener.com/docket/63141300/fintech-innovations-associates-llc-v-paypal-inc/) | 2022 | Payment processing patents |
+| **Factor2 v. Regions Financial** | Factor2 Multimedia Systems LLC v. Regions Financial Corporation | 68818033 | [View Case](https://www.courtlistener.com/docket/68818033/factor2-multimedia-systems-llc-v-regions-financial-corporation/) | 2023 | Financial services technology |
+
+## Hardware & Consumer Electronics
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **AX Wireless v. Dell** | AX Wireless LLC v. Dell Inc. | 63893593 | [View Case](https://www.courtlistener.com/docket/63893593/ax-wireless-llc-v-dell-inc/) | 2022 | Wireless hardware patents |
+| **PayVox v. Sony** | PayVox LLC v. Sony Corporation | 68276313 | [View Case](https://www.courtlistener.com/docket/68276313/payvox-llc-v-sony-corporation/) | 2023 | Consumer electronics |
+| **HyperQuery v. Sony** | HyperQuery LLC v. Sony Corporation | 69539296 | [View Case](https://www.courtlistener.com/docket/69539296/hyperquery-llc-v-sony-corporation/) | 2023 | Electronics/data processing |
+| **HyperQuery v. Apple** | HyperQuery LLC v. Apple Inc. | 69751283 | [View Case](https://www.courtlistener.com/docket/69751283/hyperquery-llc-v-apple-inc/) | 2023+ | Mobile device patents |
+| **HP v. Access Advance** | HP Inc. v. Access Advance LLC | 69077489 | [View Case](https://www.courtlistener.com/docket/69077489/hp-inc-v-access-advance-llc/) | 2023 | Patent pool licensing dispute |
+
+## Media, Entertainment & Gaming
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **In re Quantum Technology Innovations MDL** | In re Quantum Technology Innovations LLC Patent Litigation | 68253351 | [View Case](https://www.courtlistener.com/docket/68253351/in-re-quantum-technology-innovations-llc-patent-litigation/) | 2023 | Media technology MDL |
+| **Adeia v. Walt Disney** | Adeia Technologies Inc. v. The Walt Disney Company | 69353536 | [View Case](https://www.courtlistener.com/docket/69353536/adeia-technologies-inc-v-the-walt-disney-company/) | 2023 | Media streaming patents |
+| **InterDigital v. Walt Disney** | InterDigital Inc. v. The Walt Disney Company | 69604250 | [View Case](https://www.courtlistener.com/docket/69604250/interdigital-inc-v-the-walt-disney-company/) | 2023 | Wireless/streaming technology |
+| **Drifter Entertainment v. Blockchain Game** | Drifter Entertainment Inc. v. Blockchain Game Partners Inc. | 67870079 | [View Case](https://www.courtlistener.com/docket/67870079/drifter-entertainment-inc-v-blockchain-game-partners-inc/) | 2022+ | Gaming/blockchain technology |
+| **Rothschild Patent Imaging v. Bumble** | Rothschild Patent Imaging LLC v. Bumble Inc. | 69751138 | [View Case](https://www.courtlistener.com/docket/69751138/rothschild-patent-imaging-llc-v-bumble-inc/) | 2023+ | Image processing/dating apps |
+
+## Specialty Technology & Other
+
+| Case Name | Parties | Docket ID | CourtListener Link | Year | Notes |
+|-----------|---------|-----------|-------------------|------|-------|
+| **VLSI v. Patent Quality Assurance** | VLSI Technology LLC v. Patent Quality Assurance LLC | 68371063 | [View Case](https://www.courtlistener.com/docket/68371063/vlsi-technology-llc-v-patent-quality-assurance-llc/) | 2023 | Patent validity/PTAB-related |
+| **VLSI v. USPTO** | VLSI Technology LLC v. United States Patent and Trademark Office | 69000269 | [View Case](https://www.courtlistener.com/docket/69000269/vlsi-technology-llc-v-united-states-patent-and-trademark-office/) | 2023 | PTAB appeal with fee issues |
+| **Midas Green v. Green Revolution Cooling** | Midas Green Technologies LLC v. Green Revolution Cooling Inc. | 68391747 | [View Case](https://www.courtlistener.com/docket/68391747/midas-green-technologies-llc-v-green-revolution-cooling-inc/) | 2023 | Green technology/data center cooling |
+| **Advanced IC v. TSMC** | Advanced Integrated Circuit Process LLC v. Taiwan Semiconductor | 69008657 | [View Case](https://www.courtlistener.com/docket/69008657/advanced-integrated-circuit-process-llc-v-taiwan-semiconductor/) | 2023 | Semiconductor manufacturing |
+| **Cutting Edge Vision v. TCL** | Cutting Edge Vision LLC v. TCL Technology Group Corporation | 63165034 | [View Case](https://www.courtlistener.com/docket/63165034/cutting-edge-vision-llc-v-tcl-technology-group-corporation/) | 2022 | Display technology/exceptional case |
+
+---
+
+## Additional Benchmark Sets
+
+### Benchmark Set A: Oracle Defendant Cases (Enterprise Software)
+*Coherent set with same defendant, similar enterprise software technology*
+
+1. **Optimorphix v. Oracle** (67936786) - Database/enterprise software
+2. **VirtaMove v. Oracle** (69489785) - Virtualization/cloud infrastructure
+3. **FrameTech v. Oracle** (69564380) - Software framework patents
+
+### Benchmark Set B: Ericsson Defendant Cases (Telecommunications)
+*Coherent set with same defendant, wireless/telecom technology*
+
+1. **TelSync v. Ericsson** (68491204) - Wireless communication
+2. **Lab Technology v. Ericsson** (68827332) - Telecommunications
+3. **Mobility Workx v. Ericsson** (69122743) - Mobile network patents
+
+### Benchmark Set C: Autonomous Vehicle Technology
+*Coherent set with similar technology and related plaintiffs*
+
+1. **Autonomous Devices v. Tesla (I)** (65738876) - Autonomous vehicle patents
+2. **Autonomous Devices v. Tesla (II)** (68114425) - Autonomous vehicle patents
+3. **Autonomous IP v. Tesla** (68189571) - Self-driving technology
+4. **Autonomous IP v. Lyft** (68262920) - Rideshare autonomous tech
+5. **LeeLike v. Lyft** (65632768) - Transportation technology
+
+### Benchmark Set D: FinTech Innovations Plaintiff Cases
+*Coherent set with same plaintiff, financial services technology*
+
+1. **FinTech Innovations v. PNC Bank** (63141298) - Banking technology
+2. **FinTech Innovations v. PayPal** (63141300) - Payment processing
+
+### Benchmark Set E: HyperQuery Plaintiff Cases
+*Coherent set with same plaintiff against major consumer electronics companies*
+
+1. **HyperQuery v. Sony** (69539296) - Electronics/data processing
+2. **HyperQuery v. Apple** (69751283) - Mobile device patents
+
+---
+
 ## Summary Statistics
 
-- **Total Cases**: 37
-- **Tech-Focused**: 29 (78%)
-- **Life Sciences**: 4 (11%)
+- **Total Cases**: 60
+- **Tech-Focused**: 52 (87%)
+- **Life Sciences**: 4 (7%)
 - **Year Range**: 2022-2025
-- **High-Profile Cases**: 3+ (Aflibercept MDL, Janssen v. Amgen, goTV v. Netflix)
-- **Coherent Benchmark Set**: 8 Patent Armory cases
-- **Major Tech Defendants**: Google, Microsoft, Samsung, Amazon, Netflix, Qualcomm, Broadcom
+- **High-Profile Cases**: 5+ (Aflibercept MDL, Janssen v. Amgen, goTV v. Netflix, Quantum Tech MDL, VLSI cases)
+- **Coherent Benchmark Sets**: 6 sets (Patent Armory 8-case set + 5 new sets)
+- **Major Tech Defendants**: Google, Microsoft, Samsung, Amazon, Netflix, Apple, Oracle, IBM, Tesla, Disney, Sony, Dell, HP
 
 ---
 
@@ -216,18 +356,40 @@ Look for documents titled:
 
 ## Recommended High-Priority Cases for Detailed Review
 
-Based on likely fee disclosure quality and case significance:
+Based on likely fee disclosure quality, case significance, and benchmark value:
 
-1. **In re Aflibercept Patent Litigation** (68435952) - MDL with substantial fees
-2. **Janssen Biotech v. Amgen** (66574873) - High-stakes pharma dispute
-3. **LS Cloud Storage v. Amazon** (63189745) - Major tech defendant
-4. **goTV Streaming v. Netflix** (65580549) - High-profile streaming case
-5. **Cerence v. Samsung** (68347215) - AI/semiconductor technology
-6. **Headwater Research v. T-Mobile** (70705133) - Recent mobile tech case
-7. **Patent Armory v. Microsoft** (67643714) - Major tech defendant
-8. **Quickvault v. Broadcom** (69005395) - Semiconductor technology
+### High-Stakes/MDL Cases
+1. **In re Aflibercept Patent Litigation** (68435952) - Pharma MDL with substantial fees
+2. **In re Quantum Technology Innovations MDL** (68253351) - Media technology MDL
+3. **Janssen Biotech v. Amgen** (66574873) - High-stakes pharma dispute
+
+### Major Tech Defendants
+4. **LS Cloud Storage v. Amazon** (63189745) - Cloud storage vs. AWS
+5. **goTV Streaming v. Netflix** (65580549) - High-profile streaming case
+6. **Amazon v. Nokia** (68993668) - Amazon as plaintiff, wireless/IoT
+7. **Patent Armory v. Microsoft** (67643714) - Software patents
+
+### Benchmark Set Representatives
+8. **Optimorphix v. Oracle** (67936786) - Oracle defendant benchmark
+9. **TelSync v. Ericsson** (68491204) - Ericsson defendant benchmark
+10. **Autonomous Devices v. Tesla (I)** (65738876) - Autonomous vehicle benchmark
+11. **FinTech Innovations v. PayPal** (63141300) - FinTech plaintiff benchmark
+
+### Recent Cases with Detailed Filings
+12. **Headwater Research v. T-Mobile** (70705133) - Recent 2024 mobile tech
+13. **VirtaMove v. Oracle** (69489785) - Cloud infrastructure virtualization
+14. **Cutting Edge Vision v. TCL** (63165034) - Exceptional case designation
+15. **VLSI v. USPTO** (69000269) - PTAB appeal with fee issues
+
+### Diverse Technology Coverage
+16. **Cerence v. Samsung** (68347215) - AI/voice technology
+17. **Adeia v. Walt Disney** (69353536) - Media/entertainment
+18. **Midas Green v. Green Revolution Cooling** (68391747) - Green tech/data centers
+19. **AX Wireless v. Dell** (63893593) - Hardware wireless technology
+20. **Drifter Entertainment v. Blockchain Game** (67870079) - Gaming/blockchain
 
 ---
 
 *Last Updated: 2025-11-18*
 *Data Source: CourtListener.com*
+*Total Cases: 60 (37 original + 23 new)*
