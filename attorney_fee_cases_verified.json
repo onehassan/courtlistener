@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "generated_at": "2025-11-18T19:06:13.531933",
+    "total_cases": 30,
+    "date_range": "2022-2025",
+    "source": "CourtListener.com",
+    "verification_status": "API-verified cases with attorney fee references"
+  },
+  "cases": [
+    {
+      "category": "Civil Rights",
+      "case_name": "Spencer Woodman v. Department of Corrections",
+      "parties": "Spencer Woodman v. Department of Corrections",
+      "docket_id": "67640151",
+      "courtlistener_url": "https://www.courtlistener.com/docket/67640151/",
+      "year": "2023",
+      "notes": "Attorney fees case - Civil Rights - Court ID: mich",
+      "opinion_url": "https://www.courtlistener.com/opinion/9416100/spencer-woodman-v-department-of-corrections/"
+    },
+    {
+      "category": "Employment",
+      "case_name": "Christensen v. Labor Commission",
+      "parties": "Christensen v. Labor Commission",
+      "docket_id": "71907420",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71907420/",
+      "year": "2025",
+      "notes": "Attorney fees case - Employment - Court ID: utah",
+      "opinion_url": "https://www.courtlistener.com/opinion/10735802/christensen-v-labor-commission/"
+    },
+    {
+      "category": "Employment",
+      "case_name": "Landers v. Montgomery Cty. Veterans Serv. Comm.",
+      "parties": "Landers v. Montgomery Cty. Veterans Serv. Comm.",
+      "docket_id": "71840298",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71840298/",
+      "year": "2025",
+      "notes": "Attorney fees case - Employment - Court ID: ohioctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/10715506/landers-v-montgomery-cty-veterans-serv-comm/"
+    },
+    {
+      "category": "Employment",
+      "case_name": "Harmon v. Collier",
+      "parties": "Harmon v. Collier",
+      "docket_id": "67721356",
+      "courtlistener_url": "https://www.courtlistener.com/docket/67721356/",
+      "year": "2025",
+      "notes": "Attorney fees case - Employment - Court ID: ca5",
+      "opinion_url": "https://www.courtlistener.com/opinion/10703768/harmon-v-collier/"
+    },
+    {
+      "category": "Consumer Protection",
+      "case_name": "T-Mobile USA, Inc. v. William Persichetti",
+      "parties": "T-Mobile USA, Inc. v. William Persichetti",
+      "docket_id": "71165749",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71165749/",
+      "year": "2025",
+      "notes": "Attorney fees case - Consumer Protection - Court ID: gactapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/10658098/t-mobile-usa-inc-v-william-persichetti/"
+    },
+    {
+      "category": "Consumer Protection",
+      "case_name": "G-Force & Associates v. Bloecher",
+      "parties": "G-Force & Associates v. Bloecher",
+      "docket_id": "71216041",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71216041/",
+      "year": "2025",
+      "notes": "Attorney fees case - Consumer Protection - Court ID: texbizct",
+      "opinion_url": "https://www.courtlistener.com/opinion/10661980/g-force-associates-v-bloecher/"
+    },
+    {
+      "category": "Consumer Protection",
+      "case_name": "International Rights Advocates v. Mars, Incorporated",
+      "parties": "International Rights Advocates v. Mars, Incorporated",
+      "docket_id": "69739224",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69739224/",
+      "year": "2025",
+      "notes": "Attorney fees case - Consumer Protection - Court ID: dcd",
+      "opinion_url": "https://www.courtlistener.com/opinion/10356656/international-rights-advocates-v-mars-incorporated/"
+    },
+    {
+      "category": "Patent",
+      "case_name": "Commodores Entertainment Corporation v. Thomas McClary",
+      "parties": "Commodores Entertainment Corporation v. Thomas McClary",
+      "docket_id": "71488419",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71488419/",
+      "year": "2025",
+      "notes": "Attorney fees case - Patent - Court ID: ca11",
+      "opinion_url": "https://www.courtlistener.com/opinion/10679528/commodores-entertainment-corporation-v-thomas-mcclary/"
+    },
+    {
+      "category": "Patent",
+      "case_name": "Wall & Associates, Inc. v. Idaho Department of Finance",
+      "parties": "Wall & Associates, Inc. v. Idaho Department of Finance",
+      "docket_id": "71210044",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71210044/",
+      "year": "2025",
+      "notes": "Attorney fees case - Patent - Court ID: idaho",
+      "opinion_url": "https://www.courtlistener.com/opinion/10661626/wall-associates-inc-v-idaho-department-of-finance/"
+    },
+    {
+      "category": "Patent",
+      "case_name": "Yuga Labs, Inc. v. Ripps",
+      "parties": "Yuga Labs, Inc. v. Ripps",
+      "docket_id": "69047551",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69047551/",
+      "year": "2025",
+      "notes": "Attorney fees case - Patent - Court ID: ca9",
+      "opinion_url": "https://www.courtlistener.com/opinion/10639630/yuga-labs-inc-v-ripps/"
+    },
+    {
+      "category": "Class Action",
+      "case_name": "Weddle v. Wakemed Health & Hosps.",
+      "parties": "Weddle v. Wakemed Health & Hosps.",
+      "docket_id": "71920399",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71920399/",
+      "year": "2025",
+      "notes": "Attorney fees case - Class Action - Court ID: ncbizct",
+      "opinion_url": "https://www.courtlistener.com/opinion/10737472/weddle-v-wakemed-health-hosps/"
+    },
+    {
+      "category": "Class Action",
+      "case_name": "Coronado v. City of Boise",
+      "parties": "Coronado v. City of Boise",
+      "docket_id": "71913591",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71913591/",
+      "year": "2025",
+      "notes": "Attorney fees case - Class Action - Court ID: idaho",
+      "opinion_url": "https://www.courtlistener.com/opinion/10736439/coronado-v-city-of-boise/"
+    },
+    {
+      "category": "Class Action",
+      "case_name": "Gilbert v. Progressive Northwestern Insurance Co.",
+      "parties": "Gilbert v. Progressive Northwestern Insurance Co.",
+      "docket_id": "71732112",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71732112/",
+      "year": "2025",
+      "notes": "Attorney fees case - Class Action - Court ID: idaho",
+      "opinion_url": "https://www.courtlistener.com/opinion/10709653/gilbert-v-progressive-northwestern-insurance-co/"
+    },
+    {
+      "category": "EAJA",
+      "case_name": "Daley v. Choate",
+      "parties": "Daley v. Choate",
+      "docket_id": "69734086",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69734086/",
+      "year": "2025",
+      "notes": "Attorney fees case - EAJA - Court ID: ca10",
+      "opinion_url": "https://www.courtlistener.com/opinion/10729625/daley-v-choate/"
+    },
+    {
+      "category": "EAJA",
+      "case_name": "Nerio Mejia v. O'Malley",
+      "parties": "Nerio Mejia v. O'Malley",
+      "docket_id": "69340393",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69340393/",
+      "year": "2024",
+      "notes": "Attorney fees case - EAJA - Court ID: ca9",
+      "opinion_url": "https://www.courtlistener.com/opinion/10236649/nerio-mejia-v-omalley/"
+    },
+    {
+      "category": "EAJA",
+      "case_name": "Kenneth J. Delano, Jr. v. Denis McDonough",
+      "parties": "Kenneth J. Delano, Jr. v. Denis McDonough",
+      "docket_id": "69035067",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69035067/",
+      "year": "2024",
+      "notes": "Attorney fees case - EAJA - Court ID: cavc",
+      "opinion_url": "https://www.courtlistener.com/opinion/10038311/kenneth-j-delano-jr-v-denis-mcdonough/"
+    },
+    {
+      "category": "Copyright",
+      "case_name": "Designwarepro, LLC v. Retail Pro Software Pty Ltd",
+      "parties": "Designwarepro, LLC v. Retail Pro Software Pty Ltd",
+      "docket_id": "71914042",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71914042/",
+      "year": "2025",
+      "notes": "Attorney fees case - Copyright - Court ID: dcd",
+      "opinion_url": "https://www.courtlistener.com/opinion/10736455/designwarepro-llc-v-retail-pro-software-pty-ltd/"
+    },
+    {
+      "category": "Copyright",
+      "case_name": "Eddie Richardson v. Karim Kharbouch",
+      "parties": "Eddie Richardson v. Karim Kharbouch",
+      "docket_id": "69195001",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69195001/",
+      "year": "2025",
+      "notes": "Attorney fees case - Copyright - Court ID: ca7",
+      "opinion_url": "https://www.courtlistener.com/opinion/10705233/eddie-richardson-v-karim-kharbouch/"
+    },
+    {
+      "category": "Copyright",
+      "case_name": "Eddie Richardson v. Karim Kharbouch",
+      "parties": "Eddie Richardson v. Karim Kharbouch",
+      "docket_id": "69195051",
+      "courtlistener_url": "https://www.courtlistener.com/docket/69195051/",
+      "year": "2025",
+      "notes": "Attorney fees case - Copyright - Court ID: ca7",
+      "opinion_url": "https://www.courtlistener.com/opinion/10705232/eddie-richardson-v-karim-kharbouch/"
+    },
+    {
+      "category": "FDCPA",
+      "case_name": "Kashanian v. National Enterprise Systems",
+      "parties": "Kashanian v. National Enterprise Systems",
+      "docket_id": "71293331",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71293331/",
+      "year": "2025",
+      "notes": "Attorney fees case - FDCPA - Court ID: calctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/10686580/kashanian-v-national-enterprise-systems/"
+    },
+    {
+      "category": "FDCPA",
+      "case_name": "Plaza Services LLC v. Kimberly Burton",
+      "parties": "Plaza Services LLC v. Kimberly Burton",
+      "docket_id": "70878940",
+      "courtlistener_url": "https://www.courtlistener.com/docket/70878940/",
+      "year": "2025",
+      "notes": "Attorney fees case - FDCPA - Court ID: wisctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/10638603/plaza-services-llc-v-kimberly-burton/"
+    },
+    {
+      "category": "FDCPA",
+      "case_name": "Vivint Solar v. Lundberg",
+      "parties": "Vivint Solar v. Lundberg",
+      "docket_id": "70708907",
+      "courtlistener_url": "https://www.courtlistener.com/docket/70708907/",
+      "year": "2025",
+      "notes": "Attorney fees case - FDCPA - Court ID: utahctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/10623359/vivint-solar-v-lundberg/"
+    },
+    {
+      "category": "FLSA",
+      "case_name": "Brown v. Caruso Homes",
+      "parties": "Brown v. Caruso Homes",
+      "docket_id": "68549130",
+      "courtlistener_url": "https://www.courtlistener.com/docket/68549130/",
+      "year": "2024",
+      "notes": "Attorney fees case - FLSA - Court ID: ncctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/9505815/brown-v-caruso-homes/"
+    },
+    {
+      "category": "FLSA",
+      "case_name": "People v. Ashford University, LLC",
+      "parties": "People v. Ashford University, LLC",
+      "docket_id": "68264870",
+      "courtlistener_url": "https://www.courtlistener.com/docket/68264870/",
+      "year": "2024",
+      "notes": "Attorney fees case - FLSA - Court ID: calctapp",
+      "opinion_url": "https://www.courtlistener.com/opinion/9482531/people-v-ashford-university-llc/"
+    },
+    {
+      "category": "FLSA",
+      "case_name": "Lorenzo Dominguez v. Better Mortgage Corporation",
+      "parties": "Lorenzo Dominguez v. Better Mortgage Corporation",
+      "docket_id": "67481236",
+      "courtlistener_url": "https://www.courtlistener.com/docket/67481236/",
+      "year": "2023",
+      "notes": "Attorney fees case - FLSA - Court ID: ca9",
+      "opinion_url": "https://www.courtlistener.com/opinion/9450242/lorenzo-dominguez-v-better-mortgage-corporation/"
+    },
+    {
+      "category": "Securities",
+      "case_name": "CRS Mechanical v. Norfolk Cold Storage",
+      "parties": "CRS Mechanical v. Norfolk Cold Storage",
+      "docket_id": "71916235",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71916235/",
+      "year": "2025",
+      "notes": "Attorney fees case - Securities - Court ID: texbizct",
+      "opinion_url": "https://www.courtlistener.com/opinion/10736837/crs-mechanical-v-norfolk-cold-storage/"
+    },
+    {
+      "category": "Social Security - EAJA",
+      "case_name": "Wilkerson v. Social Security Administration Commissioner",
+      "parties": "Wilkerson v. Social Security Administration Commissioner",
+      "docket_id": "68320956",
+      "courtlistener_url": "https://www.courtlistener.com/docket/68320956/wilkerson-v-social-security-administration-commissioner/",
+      "year": "2024",
+      "notes": "ORDER granting Motion for Attorney Fees in the amount of $8,967.00 under Equal Access to Justice Act (EAJA)"
+    },
+    {
+      "category": "Consumer Protection - Fraud",
+      "case_name": "Wu v. Passive Wealth Builders",
+      "parties": "Wu v. Passive Wealth Builders",
+      "docket_id": "59791666",
+      "courtlistener_url": "https://www.courtlistener.com/docket/59791666/wu-v-passive-wealth-builders/",
+      "year": "2024",
+      "notes": "ORDER granting Motion for Attorney Fees - consumer fraud case, attorney fees awarded to prevailing plaintiff"
+    },
+    {
+      "category": "Civil Rights",
+      "case_name": "Moyer v. Jackson County Public Defenders Office",
+      "parties": "Moyer v. Jackson County Public Defenders Office",
+      "docket_id": "67567324",
+      "courtlistener_url": "https://www.courtlistener.com/docket/67567324/moyer-v-jackson-county-public-defenders-office/",
+      "year": "2023",
+      "notes": "ORDER regarding Bill of Costs - costs taxed in the amount of $569.80 and included in the judgment"
+    },
+    {
+      "category": "Trademark & IP",
+      "case_name": "Marko Law PLLC v. Erin Salling",
+      "parties": "Marko Law PLLC v. Erin Salling",
+      "docket_id": "71912608",
+      "courtlistener_url": "https://www.courtlistener.com/docket/71912608/",
+      "year": "2025",
+      "notes": "Opinion discussing attorney fees and hourly rates in legal malpractice case - Michigan Court of Appeals",
+      "opinion_url": "https://www.courtlistener.com/opinion/10736090/marko-law-pllc-v-erin-salling/"
+    }
+  ]
+}
