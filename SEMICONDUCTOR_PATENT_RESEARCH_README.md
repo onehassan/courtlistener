@@ -15,29 +15,71 @@ This folder contains comprehensive research tools for finding semiconductor pate
 
 ## Quick Start Guide
 
-### For Immediate Searches:
+### ⭐ NEW: Ready-to-Use Case Database
 
-**Step 1:** Open `quick_search_links.md`
-- Contains 15+ direct CourtListener URLs ready to click
+**FASTEST START:** Open `semiconductor_patent_cases.json` or `CASE_SUMMARY.md`
+- **25 semiconductor patent cases** with direct CourtListener URLs
+- **Complete docket information** (docket IDs, case numbers, courts, years)
+- **Confirmed fee petitions** identified and flagged
+- **Top 4 priority cases** with highest likelihood of fee petitions
+- **Organized by technology:** Memory (DRAM), GPU, processors, fabrication, EDA tools
+
+---
+
+### For Comprehensive Searches:
+
+**Step 1:** Review `CASE_SUMMARY.md` ⭐⭐⭐
+- **Top 4 priority cases** with confirmed/likely fee petitions
+- Case summaries with technology descriptions
+- Direct links to all 25 cases
+- Search strategies for finding fee documents
+
+**Step 2:** Open `semiconductor_patent_cases.json`
+- Machine-readable database of all cases
+- Filter by category, court, year, or company
+- Copy URLs directly into browser
+
+**Step 3:** Use `quick_search_links.md` for broader searches
+- 15+ CourtListener search URLs for discovering more cases
 - Organized by priority, district court, and technology type
-- Start with "Priority Search #1" for best results
 
-**Step 2:** Review `example_cases.md`
-- Lists 19 known semiconductor patent cases
-- Includes specific case names, parties, and search terms
-- Prioritized by likelihood of having fee petitions
-
-**Step 3:** Use `semiconductor_patent_search_guide.md` for detailed methodology
-- Comprehensive search strategies
-- Document identification tips
+**Step 4:** Consult `example_cases.md` and `semiconductor_patent_search_guide.md`
+- Detailed case descriptions and search strategies
 - Expected billing rates (2022-2025)
-- Step-by-step filtering instructions
+- Step-by-step document identification instructions
 
 ---
 
 ## File Descriptions
 
-### 1. `quick_search_links.md` ⭐ START HERE
+### 1. `CASE_SUMMARY.md` ⭐⭐⭐ START HERE (NEW)
+**Purpose:** Executive summary of found cases with top priorities
+**Contains:**
+- Top 4 priority cases (confirmed/likely fee petitions)
+- Quick links to all 25 cases
+- Technology category breakdowns
+- Court and company summaries
+- Recommended search order
+
+**Best For:** Getting directly to relevant cases with fee petitions
+
+---
+
+### 2. `semiconductor_patent_cases.json` (NEW)
+**Purpose:** Machine-readable database of all cases
+**Contains:**
+- 25 semiconductor patent cases (2014-2024)
+- Complete docket information (IDs, URLs, case numbers)
+- Party names, courts, years filed
+- Technology descriptions
+- Fee petition status (where confirmed)
+- Organized by category: Memory, GPU, Processors, Fabrication, EDA
+
+**Best For:** Programmatic access, filtering, direct URL copying
+
+---
+
+### 3. `quick_search_links.md`
 **Purpose:** Direct access to CourtListener searches
 **Contains:**
 - 15+ clickable search URLs
@@ -49,7 +91,7 @@ This folder contains comprehensive research tools for finding semiconductor pate
 
 ---
 
-### 2. `example_cases.md`
+### 4. `example_cases.md`
 **Purpose:** Known high-profile semiconductor patent cases
 **Contains:**
 - 19 specific cases likely to have fee petitions
@@ -67,7 +109,7 @@ This folder contains comprehensive research tools for finding semiconductor pate
 
 ---
 
-### 3. `semiconductor_patent_search_guide.md`
+### 5. `semiconductor_patent_search_guide.md`
 **Purpose:** Comprehensive methodology and reference
 **Contains:**
 - Search strategy explanations
